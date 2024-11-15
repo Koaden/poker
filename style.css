@@ -1,0 +1,47 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    background-color: #4d7e46;
+}
+/* Styles de base pour la carte */
+.card {
+    width: 120px;
+    height: 180px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.card .top-left,
+.card .bottom-right {
+    font-size: 14px;
+    font-weight: bold;
+}
+.card .center {
+    font-size: 32px;
+}
+.cardHide{
+    width: 120px;
+    height: 180px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: rgb(179, 51, 51);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+#card-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
