@@ -1,6 +1,18 @@
 import Colour from './Colour.js';
 import Face from './Face.js';
 import Card from './Card.js';
+import Hand from './Hand.js';
+
+// main
+const card = new Card(Colour.HEARTS, Face.KING);
+const card2 = new Card(Colour.CLUBS, Face.FIVE);
+displayCard(card, false);
+displayCard(card2, true);
+
+const hand = new Hand();
+hand.addCard(card);
+hand.addCard(card2);
+console.log(hand.toString()); 
 
 // Fonction pour afficher une carte dans la page HTML
 function displayCard(card,display) {
@@ -36,7 +48,4 @@ function displayCard(card,display) {
     cardContainer.appendChild(cardElement); 
 }
 
-// Créer une carte et l'afficher
-const card = new Card(Colour.HEARTS, Face[11]); // Dame de cœur
-displayCard(card, true);
-displayCard(card, false);
+

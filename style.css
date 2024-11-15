@@ -19,10 +19,16 @@ html, body{
     font-family: Arial, sans-serif;
     text-align: center;
 }
-.card .top-left,
+.card .top-left{
+    font-size: 14px;
+    font-weight: bold;
+    align-self: end;
+}
 .card .bottom-right {
     font-size: 14px;
     font-weight: bold;
+    align-self: start;
+    transform: rotate(180deg);
 }
 .card .center {
     font-size: 32px;
