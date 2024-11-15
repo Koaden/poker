@@ -21,7 +21,7 @@ class Hand {
     }
 
     toString() {
-        return this.hand.map(card => card.toString()).join(', ');
+        return "hand : " + this.hand.map(card => card.toString()).join(', ');
     }
 }
 

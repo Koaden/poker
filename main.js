@@ -13,6 +13,11 @@ const hand = new Hand();
 hand.addCard(card);
 hand.addCard(card2);
 console.log(hand.toString()); 
+hand.removeCard(card2);
+console.log(hand.toString()); 
+hand.addCard(card2);
+hand.clearCards();
+console.log(hand.toString()); 
 
 // Fonction pour afficher une carte dans la page HTML
 function displayCard(card,display) {
